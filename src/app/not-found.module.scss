@@ -1,0 +1,14 @@
+.notfound {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 67, 67);
+  font-family: var(--font-pt-sans);
+  border: rgb(216, 28, 28) 0.1rem solid;
+  padding: 1rem;
+  border-radius: 1.1rem;
+
+  p {
+    font-weight: 400;
+    font-style: italic;
+  }
+}
