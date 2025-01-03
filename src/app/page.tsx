@@ -20,7 +20,7 @@ export default async function Home() {
   if (pinnedLevel?.value)
     levelPinned = JSON.parse(pinnedLevel.value) as string[];
 
-  console.log({ pinnedLevel });
+  console.log({ levelPinned });
 
   return (
     <>
@@ -42,20 +42,18 @@ export default async function Home() {
                       <h3>{element.lv_title}</h3>
                     </div>
                   </Link>
-                  <Pinner
+                  {/* <Pinner
                     id={element.lv_tt_code}
                     isPinned={levelPinned.includes(element.lv_tt_code)}
                   >
                     pin
-                  </Pinner>
+                  </Pinner> */}
                 </span>
               );
             })}
           <div
             style={{
-              height: `${
-                pinnedLevel?.value ? pinnedLevel.value.length * 5 : 0
-              }rem`,
+              height: `${pinnedLevel?.value ? levelPinned.length * 5 : 0}rem`,
             }}
           ></div>
         </main>

@@ -37,29 +37,31 @@
   padding: 1rem;
   background-color: var(--button-background);
   // border-bottom: white 0.07rem solid;
-  border: #383838 0.1rem solid;
+  border: var(--button-background-alt) 0.2rem solid;
 }
 
 .pin {
   div {
     background-color: var(--newtonian);
+    border: #466fc7 0.2rem solid;
 
     h3 {
       font-family: var(--font-pt-sans);
+      color: white;
     }
     width: 100%;
   }
 
   position: fixed;
   padding: 10px 40px;
-  padding-top: 20px;
+  padding-top: 50px;
   bottom: 0;
   width: 100%;
 
   height: fit-content;
   background: linear-gradient(
     0deg,
-    rgb(14, 14, 14) 60%,
+    var(--background) 60%,
     rgba(0, 212, 255, 0) 100%
   );
 }

@@ -3,6 +3,7 @@
   --foreground: #171717;
   --newtonian: #003e8f;
   --button-background: #d4d4d4;
+  --button-background-alt: #aaaaaa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,6 +11,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
     --button-background: #171717;
+    --button-background-alt: #383838;
   }
 }
 .page {
